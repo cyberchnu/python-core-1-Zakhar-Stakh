@@ -1,10 +1,5 @@
 def makes10(a, b):
-  # Type your code
-  if a + b == 10 or a == 10 or b == 10 and type(a) == int and type(b) == int:
-    return True
-  elif a == 10 and type(a) == int and type(b) == int:
-    return True
-  elif b == 10 and type(a) == int and type(b) == int:
-    return True
-  else:
+    if a + b == 10 or a == 10 or b == 10:
+        if isinstance(a, int) and isinstance(b, int):
+            return True
     return False
